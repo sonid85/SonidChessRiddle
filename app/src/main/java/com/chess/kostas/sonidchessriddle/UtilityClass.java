@@ -269,37 +269,6 @@ public class UtilityClass {
 		
 	}
 
-	public static int getRowID(String row){
-
-			if(row.equals("1")){
-				return R.id.row1;
-			}
-			else if(row.equals("2")){
-				return R.id.row2;
-			}
-			else if(row.equals("3")){
-				return R.id.row3;		
-			}
-			else if(row.equals("4")){
-				return R.id.row4;
-			}
-			else if(row.equals("5")){
-				return R.id.row5;
-			}
-			else if(row.equals("6")){
-				return R.id.row6;
-			}
-			else if(row.equals("7")){
-				return R.id.row7;
-			}
-			else if(row.equals("8")){
-				return R.id.row8;
-			}
-
-
-		return 0;
-	}
-
 	public static String getColumnID(int x) {
 
 		switch (x) {
@@ -321,7 +290,7 @@ public class UtilityClass {
 			case 7:
 				return "H";
 		}
-		return "";
+		return " ";
 	}
 
     public static String getCorrect_y(int y) {
