@@ -234,7 +234,7 @@ public class NewGameActivity extends Activity {
 
 
 		ArrayList<ArrayList<Node>> routes = new ChessKnight().getAllRoutes(start, end);
-		//viewRoutes(routes);
+
 
 		String res = presentNodes(routes);
 
@@ -250,25 +250,7 @@ public class NewGameActivity extends Activity {
 		}
 	}
 
-/*
-	private void viewRoutes(ArrayList<ArrayList<Node>> routes) {
 
-		String res = presentNodes(routes);
-
-		//Log.i("Stif",res);
-		result = (TextView) findViewById(R.id.resultTV);
-		result.setMovementMethod(new ScrollingMovementMethod());
-		result.setTextColor(Color.BLACK);
-
-		if(res.isEmpty()) {
-			result.setText("No -3 move route- Found!");
-		}else{
-			result.setText(res);
-		}
-
-
-	}
-*/
 	private String presentNodes(ArrayList<ArrayList<Node>> routes) {
 
 		String arrow = "-->";
