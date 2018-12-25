@@ -4,21 +4,14 @@ package com.chess.kostas.sonidchessriddle;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.Typeface;
 import android.os.Bundle;
-import android.text.Editable;
 import android.text.method.ScrollingMovementMethod;
-import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TableRow;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 import java.util.ArrayList;
 import java.util.Random;
