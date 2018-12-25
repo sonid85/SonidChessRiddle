@@ -20,17 +20,9 @@ class Node
         this.y = y;
         this.dist = dist;
     }
-
-    public void Node_setx(int x) {
-        this.x = x;
-    }
-
+    
     public int Node_getx() {
         return x;
-    }
-
-    public void Node_sety(int y) {
-        this.y = y;
     }
 
     public int Node_gety() {
