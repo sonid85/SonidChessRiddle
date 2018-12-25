@@ -60,6 +60,7 @@ public class NewGameActivity extends Activity {
 			    king.setText("");
 			    horse.setText("");
 			    result.setText("");
+			    result.scrollTo(0,0);
 
                  firstappearence = true;
                  secondappearence = false;
@@ -233,10 +234,23 @@ public class NewGameActivity extends Activity {
 
 
 		ArrayList<ArrayList<Node>> routes = new ChessKnight().getAllRoutes(start, end);
-		viewRoutes(routes);
+		//viewRoutes(routes);
+
+		String res = presentNodes(routes);
+
+		//Log.i("Stif",res);
+		result = (TextView) findViewById(R.id.resultTV);
+		result.setMovementMethod(new ScrollingMovementMethod());
+		result.setTextColor(Color.BLACK);
+
+		if(res.isEmpty()) {
+			result.setText("No -3 move route- Found!");
+		}else{
+			result.setText(res);
+		}
 	}
 
-
+/*
 	private void viewRoutes(ArrayList<ArrayList<Node>> routes) {
 
 		String res = presentNodes(routes);
@@ -254,7 +268,7 @@ public class NewGameActivity extends Activity {
 
 
 	}
-
+*/
 	private String presentNodes(ArrayList<ArrayList<Node>> routes) {
 
 		String arrow = "-->";

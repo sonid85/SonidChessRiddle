@@ -223,47 +223,18 @@ public class UtilityClass {
 	
 	public static int getPieceUnicodeID(String team, String type){
 		
-		if(team.equals("w")){
-			if(type.equals("p")){ //pawn
-				return R.string.whitepawn;
-			}
-			else if(type.equals("K")){ //King
-				return R.string.whiteking;
-			}
-			else if(type.equals("Q")){ //Queen
-				return R.string.whitequeen;
-			}
-			else if(type.equals("R")){ //Rook
-				return R.string.whiterook;
-			}
-			else if(type.equals("B")){ //Bishop
-				return R.string.whitebioshop;
-			}
-			else if(type.equals("N")){ //Knight
+		if(team.equals("w")) {
+			if (type.equals("N")) { //Knight
 				return R.string.whiteknight;
 			}
-				
 		}
-		else{
-			if(type.equals("p")){ //pawn
-				return R.string.blackpawn;
-			}
-			else if(type.equals("K")){ //King
-				return R.string.blackking;
-			}
-			else if(type.equals("Q")){ //Queen
-				return R.string.blackqueen;
-			}
-			else if(type.equals("R")){ //Rook
-				return R.string.blackrook;
-			}
-			else if(type.equals("B")){ //Bishop
-				return R.string.blackbioshop;
-			}
-			else if(type.equals("N")){ //Knight
-				return R.string.blackknight;
-			}
-		}
+		else if(team.equals("b")){
+		 	if(type.equals("K")){ //King
+				 return R.string.blackking;
+			 }
+		 }
+
+
 		return 0;		
 		
 		
